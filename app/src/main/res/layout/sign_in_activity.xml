@@ -1,68 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/redDUM"
-    tools:context=".MainActivity">
+    android:background="@color/redDUM">
+
+
+    <ImageView
+        android:id="@+id/dum_image_view"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/dumlogo" />
 
     <TextView
         android:id="@+id/sign_in_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/dum_image_view"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginRight="32dp"
-        android:text="Register:"
+        android:text="Sign in:"
         android:textColor="@color/white"
         android:textSize="25sp" />
 
     <EditText
-        android:id="@+id/names_edit_text"
+        android:id="@+id/email_edit_text"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_below="@id/sign_in_text"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginRight="32dp"
-        android:background="@color/white"
-        android:hint=" names"
-        android:inputType="textPersonName"
-        android:textSize="20sp" />
-
-    <EditText
-        android:id="@+id/last_name_edit_text"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_below="@id/names_edit_text"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginRight="32dp"
-        android:background="@color/white"
-        android:hint=" last name"
-        android:inputType="textPersonName"
-        android:textSize="20sp" />
-
-    <EditText
-        android:id="@+id/register_email_edit_text"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_below="@id/last_name_edit_text"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginRight="32dp"
         android:background="@color/white"
         android:hint=" email"
-        android:inputType="textEmailAddress"
+        android:inputType="text"
         android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/register_password_edit_text"
+        android:id="@+id/signin_password_edit_text"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_below="@id/register_email_edit_text"
+        android:layout_below="@id/email_edit_text"
         android:layout_marginLeft="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginRight="32dp"
@@ -71,24 +53,40 @@
         android:inputType="textPassword"
         android:textSize="20sp" />
 
-    <EditText
-        android:id="@+id/register_repeat_password_edit_text"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_below="@id/register_password_edit_text"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginRight="32dp"
-        android:background="@color/white"
-        android:hint=" repeat password"
-        android:inputType="textPassword"
-        android:textSize="20sp" />
-
     <Button
-        android:id="@+id/register_register_button"
+        android:id="@+id/sign_in_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/register_repeat_password_edit_text"
+        android:layout_below="@+id/signin_password_edit_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:text="Sign in"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/no_register_yet_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sign_in_button"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="32dp"
+        android:gravity="center"
+        android:text="Don´t have an account?"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/go_register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/no_register_yet_text"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="32dp"
         android:layout_marginTop="8dp"
@@ -99,5 +97,4 @@
         android:paddingEnd="30dp"
         android:text="Register"
         android:textSize="20sp" />
-
 </RelativeLayout>
