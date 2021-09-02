@@ -17,9 +17,9 @@
         android:layout_marginTop="16dp"
         android:layout_marginBottom="32dp"
         android:text="Dibujando un mañana"
-        android:textStyle="bold"
         android:textColor="@color/black"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <RelativeLayout
         android:layout_width="wrap_content"

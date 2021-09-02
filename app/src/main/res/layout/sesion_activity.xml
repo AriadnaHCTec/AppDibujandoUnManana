@@ -28,7 +28,7 @@
 
     <Button
         android:id="@+id/session_sign_in_button"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="100dp"
         android:layout_below="@+id/sesion_motivation_text"
         android:layout_centerHorizontal="true"
@@ -36,7 +36,7 @@
         android:layout_marginTop="64dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
-        android:gravity="center_vertical"
+        android:gravity="center"
         android:paddingStart="30dp"
         android:paddingEnd="30dp"
         android:text="Sign in"
@@ -44,16 +44,16 @@
 
     <Button
         android:id="@+id/sessio_donate_button"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="100dp"
         android:layout_below="@+id/session_sign_in_button"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
+        android:gravity="center"
         android:paddingStart="30dp"
         android:paddingEnd="30dp"
         android:text="Donate"
-        android:gravity="center_vertical"
         android:textSize="30sp" />
 
 </RelativeLayout>
